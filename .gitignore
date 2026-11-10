@@ -1,0 +1,8 @@
+.env
+venv/
+__pycache__/
+*.pyc
+data/operations.db
+.streamlit/secrets.toml
+opsvenv/
+.DS_Store
