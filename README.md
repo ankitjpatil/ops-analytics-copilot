@@ -80,7 +80,7 @@ Patterns are planted so the analysis has real signal to find:
 
 - Electronics orders are backordered far more often than other categories.
 - Barrie-DC runs understocked, with the most items below reorder point.
-- Order volume spikes in November and December.
+- Ordered quantity jumps in November and December (larger orders, not more of them).
 
 ## Project structure
 

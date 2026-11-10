@@ -10,7 +10,7 @@ Fill in the "Result" and "Pass?" columns as you run each against your deployed a
 | 1 | Which category has the most backordered orders? | Electronics (backorder rate was inflated in the data) | | |
 | 2 | Total order quantity by warehouse | 4 warehouses, summed quantities | | |
 | 3 | Which SKUs are below their reorder point at Barrie-DC? | Non-empty list; Barrie runs understocked by design | | |
-| 4 | How many orders were placed in December 2025? | A count; Nov/Dec were spiked in the data | | |
+| 4 | Total quantity ordered per month in 2025 | 12 months; Nov and Dec are the highest (order counts stay flat, quantities jump) | | |
 | 5 | Average unit cost by category | 6 categories with averages | | |
 | 6 | Top 5 SKUs by total ordered quantity | 5 rows, descending | | |
 

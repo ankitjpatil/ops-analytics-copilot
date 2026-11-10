@@ -22,7 +22,7 @@ st.set_page_config(page_title="Ops Analytics Copilot", page_icon="📊", layout=
 EXAMPLES = [
     "Which category has the most backordered orders?",
     "Total order quantity by warehouse",
-    "Number of orders per month in 2025",
+    "Total quantity ordered per month in 2025",
     "Share of orders by status",
     "Which SKUs are below their reorder point at Barrie-DC?",
     "Top 5 SKUs by total ordered quantity",
@@ -92,7 +92,7 @@ def draw_chart(df: pd.DataFrame, kind: str):
             .mark_line(point=True)
             .encode(
                 x=alt.X("label:O", title=label, sort=None),
-                y=alt.Y("value:Q", title=value),
+                y=alt.Y("value:Q", title=value, axis=alt.Axis(tickCount=6)),
                 tooltip=tooltip,
             )
         )
@@ -102,7 +102,7 @@ def draw_chart(df: pd.DataFrame, kind: str):
             .mark_bar(cornerRadiusEnd=4)
             .encode(
                 y=alt.Y("label:N", title=label, sort="-x"),
-                x=alt.X("value:Q", title=value),
+                x=alt.X("value:Q", title=value, axis=alt.Axis(tickCount=6)),
                 color=alt.Color("value:Q", legend=None, scale=alt.Scale(scheme="blues")),
                 tooltip=tooltip,
             )
